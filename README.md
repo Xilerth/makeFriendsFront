@@ -1,27 +1,33 @@
-# MakeFriendsFront
+# Make Friends
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
+¿Estás cansado de sentirte solo y no tener a nadie con quien compartir tus intereses? ¡Tenemos la solución perfecta para ti! Presentamos nuestra nueva aplicación para hacer amigos, la forma más fácil y divertida de conocer gente nueva y hacer conexiones auténticas.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Además, nuestra aplicación es muy fácil de usar. Simplemente usa el chat de tu streamer de confianza y comienza a interactuar con otros usuarios. 
 
-## Code scaffolding
+¿A qué estás esperando? comienza a crear conexiones auténticas y duraderas con personas que comparten tus intereses y pasiones. ¡Únete a nuestra comunidad de amigos hoy mismo!
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Comandos 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+`!fconsultaramistad`: Este comando se utiliza para consultar el estado de una solicitud de amistad. Puedes utilizar este comando para averiguar si ya has enviado una solicitud de amistad a alguien o si alguien te ha enviado una solicitud a ti
 
-## Running unit tests
+`!fconsultarestado`: Este comando se utiliza para consultar el estado de la persona que lo escriba.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`!fbuscaramistad`: Este comando se utiliza para iniciar una búsqueda de amistad, `**este es el comando inicial para registrarse**`.
 
-## Running end-to-end tests
+`!fcancelarbusqueda`: Este comando se utiliza para cancelar una búsqueda de amistad. Si has iniciado una búsqueda y quieres detenerla, puedes utilizar este comando para cancelarla.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+`!faceptaramistad`: Este comando se utiliza para aceptar una solicitud de amistad pendiente. ``!faceptaramistad nombreDeLaPersona``
 
-## Further help
+`!fdenegaramistad`: Este comando se utiliza para rechazar una solicitud de amistad pendiente. ``!fdenegaramistad nombreDeLaPersona``
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+`!fproponeramistad`: Este comando se utiliza para proponer una amistad a alguien. Si has encontrado a alguien que te interesa y quieres enviarle una solicitud de amistad, puedes utilizar este comando para hacerlo. ``!fproponeramistad nombreDeLaPersona``
+
+`!fhelp`: Este comando se utiliza para obtener ayuda y obtener más información sobre cómo utilizar la aplicación o el bot. Puedes utilizar este comando para acceder a una lista de comandos disponibles.
+
+
+## Accesibilidad
+
+Esta aplicación cuenta con un pequeño desarrollo para la accesibilid del usuario, puedes navegar con las teclas `alt + B` / `alt + T` / `alt + R` a las diferentes ventanas que tiene
+
