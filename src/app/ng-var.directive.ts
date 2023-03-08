@@ -5,7 +5,7 @@ import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 })
 export class NgVarDirective {
   @Input()
-  set ngVar(context: unknown) {
+  set ngVar(context: any) {
     this.context.$implicit = this.context.ngVar = context;
 
     if (!this.hasView) {
@@ -15,8 +15,8 @@ export class NgVarDirective {
   }
 
   private context: {
-    $implicit: unknown;
-    ngVar: unknown;
+    $implicit: any;
+    ngVar: any;
   } = {
     $implicit: null,
     ngVar: null,
