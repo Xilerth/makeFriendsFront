@@ -1,0 +1,26 @@
+<article class="card">
+  <div class="image">
+    <img
+      [src]="_data?.value?.profile_image_url"
+      alt="Imagen de perfil del usuario de twitch"
+    />
+  </div>
+  <div class="content">
+    <h2 class="title" (click)="navigateTo(_data.key)" >{{ _data.key | uppercase }}</h2>
+    <p class="description friends">
+      Amigos: <span>{{ _data?.value?.accepted?.length }}</span>
+    </p>
+    <p class="description denied">
+      Denegados: <span>{{ _data?.value?.denied?.length }}</span>
+    </p>
+    <p class="description pending">
+      Pendiente: <span>{{ _data?.value?.pending?.length }}</span>
+    </p>
+
+    <div class="progress-bar">
+      <span class="tag">{{percentage | peopleStatus}}</span>
+      <span class="percentage">{{ percentage }}%</span>
+      <div class="progress" [style]="'width:' + percentage + '%'"></div>
+    </div>
+  </div>
+</article>

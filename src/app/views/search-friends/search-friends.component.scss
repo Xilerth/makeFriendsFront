@@ -1,0 +1,17 @@
+section {
+  &.search-friends {
+    height: calc(100vh - 90px - 3rem);
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin-block-start: 3rem;
+    overflow: hidden;
+    width: 80%;
+    align-content: start;
+    &:hover {
+      overflow: overlay;
+    }
+  }
+}

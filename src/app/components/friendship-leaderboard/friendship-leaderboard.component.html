@@ -1,0 +1,20 @@
+<section class="leaderboard">
+  <div class="column first-column">
+    <xilerth-friendship-card
+      *ngFor="let item of _data | slice : 0 : 4; let i = index"
+      [data]="{item, index: i + 3}"
+    ></xilerth-friendship-card>
+  </div>
+  <div class="column second-column">
+    <xilerth-friendship-card
+      *ngFor="let item of _data | slice : 4 : 8; let i = index"
+      [data]="{item, index: i + 7}"
+    ></xilerth-friendship-card>
+  </div>
+  <div class="column third-column">
+    <xilerth-friendship-card
+      *ngFor="let item of _data | slice : 8 : 12; let i = index"
+      [data]="{item, index: i + 11}"
+    ></xilerth-friendship-card>
+  </div>
+</section>

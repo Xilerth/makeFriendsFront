@@ -1,0 +1,62 @@
+<div class="container" *ngVar="(peopleData | async)?.[name] as user">
+  <div class="profile" *ngIf="user">
+    <div class="image">
+      <img
+        [src]="user.profile_image_url"
+        alt="Imagen de perfil del usuario de twitch"
+      />
+    </div>
+    <div class="information">
+      <div class="personal">
+        <div class="name">
+          {{ name | uppercase }}
+        </div>
+        <div class="tag">
+          {{
+            (user.accepted?.length /
+              (user.accepted?.length + user.denied?.length) || 0) * 100
+              | peopleStatus
+          }}
+        </div>
+        <div class="status">
+          {{ user.status | uppercase }}
+        </div>
+      </div>
+      <div class="friends-data">
+        <div class="list friends">
+          <div class="title">
+            <div class="text">Amigos</div>
+            <div class="number">({{ user.accepted?.length }})</div>
+          </div>
+          <div class="friend-container">
+            <div class="friend" (click)="navigateTo(friend)" *ngFor="let friend of user.accepted">
+              {{ friend }}
+            </div>
+          </div>
+        </div>
+        <div class="list denied">
+          <div class="title">
+            <div class="text">Denegados</div>
+            <div class="number">({{ user.denied?.length }})</div>
+          </div>
+          <div class="friend-container">
+            <div class="friend" (click)="navigateTo(friend)" *ngFor="let friend of user.denied">
+              {{ friend }}
+            </div>
+          </div>
+        </div>
+        <div class="list pending">
+          <div class="title">
+            <div class="text">Pendientes</div>
+            <div class="number">({{ user.pending?.length }})</div>
+          </div>
+          <div class="friend-container">
+            <div class="friend" (click)="navigateTo(friend)" *ngFor="let friend of user.pending">
+              {{ friend }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

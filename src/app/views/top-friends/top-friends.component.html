@@ -1,0 +1,7 @@
+<xilerth-top-three-friendship
+  [data]="peopleData | async | keyvalue | lookingForFriendship: false | slice : 0 : 3"
+></xilerth-top-three-friendship>
+
+<xilerth-friendship-leaderboard
+  [data]="peopleData | async | keyvalue | lookingForFriendship: false | slice : 3 : 15"
+></xilerth-friendship-leaderboard>

@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --white: #e6e6e6;
+  --black: #1e1e1e;
+
+  --accented: #98dad9;
+  --primary: #2e424d;
+  --secondary: #5b8291;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, var(--black) 0%, var(--primary) 65.62%);
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "kanit", "Roboto", sans-serif;
+  font-size: 14px;
+  margin: 0;
+
+}
+
+.accesibility-on {
+  transition: 0.5 all;
+}
+.accesibility-on *::first-letter {
+  font-size: 130%;
+  border-bottom: 2px solid #98dad9;
+}
+
+//style scroll bar
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accented);
+}
+
+//style scroll bar
+

@@ -1,0 +1,122 @@
+.profile {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 500px 1fr;
+  gap: 2rem;
+  place-content: center;
+  place-items: center;
+  width: 70%;
+  height: calc(100vh - 100px);
+
+  .image {
+    width: 500px;
+    height: 700px;
+    overflow: hidden;
+    object-fit: none;
+    filter: drop-shadow(3px 3px 0rem var(--black));
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-position: 50% 50%;
+      margin-right: 1em;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+  }
+
+  .information {
+    padding-block: 1rem;
+    align-self: start;
+    justify-self: start;
+    display: grid;
+    gap: 2.5rem;
+    .personal {
+      display: grid;
+      gap: 0.25rem;
+      grid-template: 1fr 1fr / auto 1fr;
+      filter: drop-shadow(3px 3px 0rem var(--black));
+
+      .name {
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: var(--white);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        align-self: end;
+        line-height: 1.1;
+      }
+      .tag {
+        font-size: 1.4rem;
+        color: rgb(113, 113, 113);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        align-self: end;
+      }
+      .status {
+        font-size: 1.5rem;
+        color: rgb(113, 113, 113);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        align-self: start;
+      }
+    }
+    .friends-data {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 4rem;
+      .list {
+        display: grid;
+        gap: 0.5rem;
+        align-items: start;
+        align-content: start;
+        .friend-container {
+          display: grid;
+          gap: 1rem;
+          font-size: 1.2rem;
+          color: var(--accented);
+          filter: drop-shadow(3px 3px 0rem var(--black));
+          max-height: 500px;
+          overflow: hidden;
+          &:hover {
+            overflow-y: auto;
+          }
+          .friend:hover {
+            color: var(--white);
+            cursor: pointer;
+          }
+        }
+      }
+      .title {
+        display: flex;
+        gap: 0.25rem;
+        align-items: bottom;
+        filter: drop-shadow(3px 3px 0rem var(--black));
+
+        .text {
+          font-size: 1.5rem;
+          font-weight: 500;
+          color: var(--white);
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          align-self: end;
+          line-height: 1.1;
+          text-align: center;
+        }
+        .number {
+          font-size: 1rem;
+          font-weight: 500;
+          color: var(--secondary);
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          align-self: end;
+        }
+      }
+    }
+  }
+}

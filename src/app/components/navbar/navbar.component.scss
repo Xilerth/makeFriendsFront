@@ -1,0 +1,41 @@
+nav {
+  user-select: none;
+  border-bottom: 1px solid #98dad9;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 7rem;
+    margin: 0;
+    padding: 0;
+    li {
+      a {
+        text-decoration: none;
+        color: #fff;
+        transition: 0.5 all;
+
+        &:hover {
+          color: #98dad9;
+        }
+        &.active {
+          color: #98dad9;
+          filter: drop-shadow(0 0 1px var(--primary));
+        }
+      }
+      img {
+        width: 100px;
+        transform: translateY(0.7rem);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    ul {
+      gap: 2rem;
+    }
+  }
+}

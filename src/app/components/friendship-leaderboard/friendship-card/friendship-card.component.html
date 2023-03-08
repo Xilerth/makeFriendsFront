@@ -1,0 +1,12 @@
+<div class="card" *ngIf="_data">
+  <div class="position">{{ index }}º</div>
+  <div class="img">
+    <img [src]="_data.value.profile_image_url" alt="first" />
+  </div>
+  <div class="name" (click)="navigateTo(_data.key)">
+    {{ _data.key }}
+  </div>
+  <div class="description friends">
+    {{ _data?.value?.accepted?.length }}
+  </div>
+</div>

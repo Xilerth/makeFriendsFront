@@ -1,0 +1,6 @@
+<section class="search-friends">
+  <xilerth-search-card
+    [data]="data"
+    *ngFor="let data of (peopleData | async | keyvalue) | lookingForFriendship"
+  ></xilerth-search-card>
+</section>

@@ -1,0 +1,10 @@
+.toast-list{
+    position: fixed;
+    top: 0;
+    right: 2rem;
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    z-index: 100;
+    width: 370px;
+}
