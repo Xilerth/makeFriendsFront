@@ -31,3 +31,18 @@ Además, nuestra aplicación es muy fácil de usar. Simplemente usa el chat de t
 
 Esta aplicación cuenta con un pequeño desarrollo para la accesibilid del usuario, puedes navegar con las teclas `alt + B` / `alt + T` / `alt + R` a las diferentes ventanas que tiene
 
+
+## Diseño
+
+El diseño del frontend se ha realizado completamente utilizando la herramienta Figma. Adjunto a continuación un par de imágenes de referencia para mayor claridad.
+
+https://www.figma.com/file/wCQXDj5NWdd4SufQELYnDD/Untitled?node-id=7%3A737&t=9eUfAkuqII5CIG9G-1
+
+## Buscando amistad
+![Buscando amistad](https://user-images.githubusercontent.com/15980151/223768565-ddd222b4-24ee-47da-aa9b-4a9d7eebc589.png)
+
+## Top Amistades
+![Top amigos](https://user-images.githubusercontent.com/15980151/223768580-2a99f335-53f0-438e-8054-42b5adf6f910.png)
+
+## Perfil
+![Profile](https://user-images.githubusercontent.com/15980151/223768595-1afb808b-efb7-43c1-b7b5-e2e55568c739.png)
