@@ -9,11 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'makeFriendsFront';
 
-  constructor(private friendsService: FriendsService) {
-    this.friendsService.getMessage().subscribe((msg) => {
-      console.log(msg);
-    });
-
+  constructor() {
     console.log(`
      
                                                                        '
@@ -55,8 +51,4 @@ export class AppComponent {
       'color: red; font-size: 20px; font-weight: bold'
     );
   }
-
-  // sendMessage() {
-  //   this.friendsService.sendMessage('Hello from Angular');
-  // }
 }

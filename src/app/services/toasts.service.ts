@@ -10,25 +10,18 @@ export class ToastsService {
 
   constructor(private socket: Socket) {
     this.joinFindFriendship.subscribe((data) => {
-      console.log(data);
       this.toastEvents$.next({ data, type: 'joinFindFriendship' });
     });
 
     this.newAcceptFriend.subscribe((data) => {
-      console.log(data);
-
       this.toastEvents$.next({ data, type: 'newAcceptFriend' });
     });
 
     this.newDenyFriend.subscribe((data) => {
-      console.log(data);
-
       this.toastEvents$.next({ data, type: 'newDenyFriend' });
     });
 
     this.newFriendRequest.subscribe((data) => {
-      console.log(data);
-
       this.toastEvents$.next({ data, type: 'newFriendRequest' });
     });
   }

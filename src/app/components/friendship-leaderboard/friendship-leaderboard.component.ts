@@ -7,7 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class FriendshipLeaderboardComponent {
   @Input() set data(data: any) {
-    console.log(data)
     this._data = data;
   }
 

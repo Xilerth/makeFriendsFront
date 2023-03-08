@@ -31,7 +31,6 @@ export class ToastComponent{
   }
 
   public generateData(data: any){
-    console.log(data, this.type)
     switch (this.type) {
       case this.typelist.joinFindFriendship:
         this.message = `${data.username} se ha unido a la búsqueda de amistad!`;
