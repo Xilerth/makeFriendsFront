@@ -46,3 +46,11 @@ https://www.figma.com/file/wCQXDj5NWdd4SufQELYnDD/Untitled?node-id=7%3A737&t=9eU
 
 ## Perfil
 ![Profile](https://user-images.githubusercontent.com/15980151/223768595-1afb808b-efb7-43c1-b7b5-e2e55568c739.png)
+
+## Contribuidores actuales
+
+<a href = "https://github.com/Xilerth/make-friends-twitch/contributors">
+  <img src = "https://contrib.rocks/image?repo=xilerth/make-friends-twitch"/>
+</a>
+
+
