@@ -18,7 +18,7 @@ import { FriendshipCardComponent } from './components/friendship-leaderboard/fri
 import { NgVarDirective } from './ng-var.directive';
 import { ToastEventsComponent } from './components/toast-events/toast-events.component';
 import { ToastComponent } from './components/toast/toast.component';
-const config: SocketIoConfig = { url: 'localhost:3001/', options: {} };
+const config: SocketIoConfig = { url: 'https://makefriendsapi.xilerth.com/', options: {} };
 
 @NgModule({
   declarations: [
